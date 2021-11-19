@@ -30,11 +30,11 @@ header nav {
 
 h1 {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     font-size: 400%;
+    width: 40%;
     height: fit-content;
     padding: 5px;
-    padding-left: 150px;
     padding-right: 20px;
     border-top: solid 3px;
     border-right: solid 3px;
@@ -46,7 +46,6 @@ h1 {
 }
 
 nav {
-    font-size: 150%;
     display: flex;
     padding: 2px;
     margin-bottom: -15px;
@@ -59,7 +58,7 @@ ul {
 
 ul li {
     display: flex;
-    font-size: 100%;
+    font-size: 130%;
     padding: 5px;
     padding-right: 10px;
     padding-left: 10px;
@@ -92,14 +91,8 @@ ul li:hover {
 }
 
 article {
-    height: auto;
-    padding: 15px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .about-me {
@@ -139,6 +132,8 @@ article {
 h2 {
     font-size: 400%;
     text-align: center;
+    width: fit-content;
+    align-self: center;
     padding: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -151,15 +146,6 @@ h2 {
 
 .old-phone {
     width: 400px;
-    height: 300px;
-    border: solid 10px rgb(206, 206, 206);
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 15px 15px 10px black;
-}
-
-.pencil-paper {
-    width: 500px;
     height: 300px;
     border: solid 10px rgb(206, 206, 206);
     border-radius: 10px;
@@ -185,14 +171,6 @@ p {
     height: 350px;
     padding: 20px;
     overflow: scroll;
-}
-
-.contact-me {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .info {
@@ -326,33 +304,45 @@ h4 {
 
 
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1024px) {
     header {
         height: auto;
     }
 
     h1 {
-        justify-content: flex-start;
-        font-size: 250%;
-        width: 40%;
-        padding-left: 75px;
-
+        justify-content: flex-end;
+        font-size: 300%;
     }
 
     h2 {
-        font-size: 400%;
+        font-size: 300%;
+    }
+
+    .sam-images {
+        justify-content: center;
+    }
+
+    .young-sam {
+        position: relative;
+    }
+
+    .young-sam, .wedding-sam {
+        width: 300px;
+        height: 225px;
+        margin-left: unset;
     }
 
     .about-me {
         height: auto;
     }
 
-    .about-text {
-        visibility: visible;
-    }
-
     ul li {
-        font-size: 60%;
+        font-size: 85%;
+        margin-right: 15px;
+
+    }
+    ul li:hover {
+        font-size: 100%;
     }
 
     .apps-title {
@@ -372,25 +362,6 @@ h4 {
         font-size: 65%;
     }
 }
-    
-@media screen and (max-width: 825px) {
-
-    .main-app-block, .fourth-app, .fifth-app {
-        width: 90%;
-    }
-
-    .eventube, .cheat-sheet, .portfolio {
-        width: 100%;
-    }
-
-    .contact-w-nav {
-        width: 75%;
-    }
-
-    .info {
-        font-size: 65%;
-    }
-}
 
 @media screen and (max-width: 768px) {
     
@@ -399,27 +370,17 @@ h4 {
     }
 
     h1 {
-        font-size: 200%;
-        padding-left: 50px;
-        justify-content: center;
-    }
-
-    nav ul {
-        font-size: 35%;
+        font-size: 250%;
+        justify-content: flex-end;
     }
 
     ul li {
-        margin-right: 5px;
+        font-size: 75%;
+        margin-right: 10px;
     }
 
     .cool-sam {
         width: 100%;
-    }
-
-    h3 {
-        font-size: 250%;
-        margin-top: -125px;
-        align-self: center;
     }
 
     h2 {
@@ -429,8 +390,6 @@ h4 {
 
     .young-sam {
         position: relative;
-
-        transition: opacity 1s ease-in-out;
     }
     
     .young-sam, .wedding-sam {
@@ -462,6 +421,22 @@ h4 {
 
     .info {
         font-size: 30%;
+    }
+
+    .main-app-block, .fourth-app, .fifth-app {
+        width: 90%;
+    }
+
+    .eventube, .cheat-sheet, .portfolio {
+        width: 100%;
+    }
+
+    .contact-w-nav {
+        width: 75%;
+    }
+
+    .info {
+        font-size: 65%;
     }
 
 }
