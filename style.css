@@ -67,7 +67,7 @@ ul li {
     border-radius: 10px;
     background-color: rgba(236, 210, 243, 0.815);
     color: rgb(148, 82, 185);
-    transition: font-size 1s 0s;
+    transition: font-size .5s 0s;
 }
 
 ul li:hover {
@@ -233,7 +233,6 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 70%;
 }
 
 .info li {
@@ -241,6 +240,7 @@ h4 {
     background: linear-gradient(#fff9ac, #f8eb75);
     color: black;
     box-shadow: 15px 15px 10px black;
+    font-size: 150%;
 }
 
 pre {
@@ -303,6 +303,10 @@ pre {
     opacity: 100%;
 }
 
+.info li:hover {
+    font-size: 165%;
+}
+
 
 
 
@@ -351,7 +355,6 @@ pre {
 
     .about-title-text {
         align-items: center;
-
     }
 
     .about-text {
@@ -365,12 +368,11 @@ pre {
         text-align: center;
     }
 
-    .contact-w-nav {
-        width: 75%;
+    .info li {
+        font-size: 150%;
     }
-
-    .info {
-        font-size: 65%;
+    .info li:hover {
+        font-size: 165%;
     }
 }
 
@@ -414,34 +416,20 @@ pre {
         transform: unset;
     }
 
-    .pencil-paper, .old-phone {
+    .old-phone {
         width: 350px;
         height: 200px;
     }
 
-
-    li {
-        align-self: center;
+    .info li {
+        font-size: 125%;
     }
 
-    .info {
-        font-size: 30%;
-    }
-
-    .main-app-block, .fourth-app, .fifth-app {
+    /* .main-app-block {
         width: 90%;
-    }
+    } */
 
-    .eventube, .cheat-sheet, .portfolio {
-        width: 100%;
+    .info li:hover {
+        font-size: 140%;
     }
-
-    .contact-w-nav {
-        width: 75%;
-    }
-
-    .info {
-        font-size: 65%;
-    }
-
 }
